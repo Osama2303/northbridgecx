@@ -40,20 +40,20 @@ const Button = ({
   );
 };
 
-const Card = ({ children }: { children: React.ReactNode }) => (
-  <div className="rounded-2xl border border-slate-200 bg-white shadow-sm">{children}</div>
+const Card = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
+  <div className={`rounded-2xl border border-slate-200 bg-white shadow-sm ${className}`}>{children}</div>
 );
 
-const CardHeader = ({ children }: { children: React.ReactNode }) => (
-  <div className="p-6 pb-2">{children}</div>
+const CardHeader = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
+  <div className={`p-6 pb-2 ${className}`}>{children}</div>
 );
 
-const CardTitle = ({ children }: { children: React.ReactNode }) => (
-  <h3 className="text-lg font-semibold tracking-tight">{children}</h3>
+const CardTitle = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
+  <h3 className={`text-lg font-semibold tracking-tight ${className}`}>{children}</h3>
 );
 
-const CardContent = ({ children }: { children: React.ReactNode }) => (
-  <div className="p-6 pt-2">{children}</div>
+const CardContent = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
+  <div className={`p-6 pt-2 ${className}`}>{children}</div>
 );
 
 const Bullet = ({ children }: { children: React.ReactNode }) => (
