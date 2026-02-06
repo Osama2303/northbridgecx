@@ -1,5 +1,5 @@
 "use client";
-
+import type React from "react";
 import { PhoneCall, ShieldCheck, Clock, Globe2, CheckCircle2, Mail, MapPin, Phone } from "lucide-react";
 
 const BRAND = {
